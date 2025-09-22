@@ -176,7 +176,7 @@ const Projects = () => {
                 </p>
                 <p>
                   <a
-                    href="https://car-rental-project-alpha-ten.vercel.app/"
+                    href="https://lotr-api-react.vercel.app/"
                     target="_blank"
                   >
                     Live Mode
