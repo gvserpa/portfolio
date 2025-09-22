@@ -102,4 +102,10 @@
   }
 }
 
+@media(max-width: 1400px) {
+  .about {
+    height: 100%;
+  }
+}
+
 
