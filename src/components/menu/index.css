@@ -1,0 +1,128 @@
+.menu,
+.menu-nav,
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.menu-nav {
+  cursor: pointer;
+}
+
+.title h2 {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.social-media img {
+  cursor: pointer;
+}
+
+.social-media img:hover {
+  transform: scale(1.2)
+}
+
+.menu-list {
+  width: 10vw;
+  position: absolute;
+  top: 70px; 
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  padding: 1rem;
+  z-index: 100;
+}
+
+.menu-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+
+.menu-list li:hover {
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 10px;
+  }
+
+  .menu-list {
+    width: 90vw; /* ocupa quase toda a tela */
+    top: 60px;
+    left: 5vw;
+  }
+
+  .social-media {
+    margin-top: 1rem;
+  }
+}
+
+/* TABLET: até 768px */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: auto;
+  }
+
+  .menu-list {
+    width: 200px;
+    top: 65px;
+  }
+
+  .social-media {
+    margin-top: 0.5rem;
+  }
+}
+
+/* LAPTOP: até 1024px */
+@media (max-width: 1024px) {
+  .menu {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  .menu-list {
+    width: 180px;
+    top: 70px;
+  }
+}
+
+/* DESKTOP GRANDE: acima de 1200px */
+@media (min-width: 1200px) {
+  .menu {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .menu-list {
+    width: 10vw;
+  }
+}

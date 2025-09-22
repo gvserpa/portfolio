@@ -1,0 +1,205 @@
+/* ---------------------------
+   RESET
+----------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* =========================
+   BASE / MOBILE FIRST
+========================= */
+.main-content {
+  display: flex;
+  flex-direction: column;      /* mobile: empilha */
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4vh 5vw;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  width: 100%;
+}
+
+.main-info {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-info h2 {
+  font-weight: 400;
+  font-size: 1.25rem; /* mobile-friendly */
+}
+
+.main-info h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 2.6rem;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  display: block;
+}
+
+.main-info p {
+  width: 100%;
+  max-width: 720px;
+  margin: 0.5rem auto;
+  font-size: 0.98rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.main-photo {
+  width: 100%;
+  max-width: 720px;
+  margin: 1rem auto 0;
+}
+
+.main-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* cobre área mantendo proporção */
+  border-radius: 6px;
+}
+
+.email {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.email img {
+  width: 36px;
+  height: auto;
+}
+
+/* =========================
+   TABLET (>= 768px)
+========================= */
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;     /* volta para linha */
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 6vh 6vw;
+  }
+
+  .main-info {
+    flex: 0 0 48%;
+    max-width: none;
+    text-align: left;
+    margin: 0;
+  }
+
+  .main-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-info h1 {
+    font-size: 3.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .main-info p {
+    width: 100%;
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  .main-photo {
+    flex: 0 0 48%;
+    margin: 0;
+  }
+
+  .main-photo img {
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  .email {
+    justify-content: flex-start;
+  }
+
+  .email img {
+    width: 28px;
+  }
+}
+
+/* =========================
+   DESKTOP (>= 1024px)
+========================= */
+@media (min-width: 1024px) {
+  .main-info h2 {
+    font-size: 1.75rem;
+  }
+
+  .main-info h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.15rem;
+  }
+
+  .main-photo img {
+    max-height: 560px;
+  }
+
+  .email img {
+    width: 32px;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP (>= 1400px)
+========================= */
+@media (min-width: 1400px) {
+  .main-content {
+    padding: 10vh 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .main-info {
+    flex: 0 0 40%;
+    margin-left: 0;
+  }
+
+  .main-photo {
+    flex: 0 0 40%;
+  }
+
+  .main-info h1 {
+    font-size: 5rem;
+  }
+
+  .main-info h2 {
+    font-size: 2rem;
+  }
+}
