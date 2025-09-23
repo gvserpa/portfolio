@@ -28,6 +28,7 @@
 
 .social-media img {
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-media img:hover {

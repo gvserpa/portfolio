@@ -4,10 +4,10 @@ import mail from "../../assets/mail-fill (1).png";
 import linkedin from "../../assets/linkedin-white.png";
 import github from "../../assets/github-fill (6).png";
 import insta from "../../assets/instagram-fill (1).png";
+import zap from "../../assets/zapzap.png"
 
 const Footer = () => {
-
-    const scrollToSection = (id) => {
+  const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -21,8 +21,8 @@ const Footer = () => {
           <h2>DevGustavo</h2>
           <div className="footer-left-links">
             <ul>
-              <li onClick={() => scrollToSection('projects')}>Projects</li>
-              <li onClick={() => scrollToSection('about')}>About</li>
+              <li onClick={() => scrollToSection("projects")}>Projects</li>
+              <li onClick={() => scrollToSection("about")}>About</li>
             </ul>
           </div>
         </div>
@@ -36,14 +36,23 @@ const Footer = () => {
           <div className="footer-socials">
             <p>Find Me in Social</p>
             <div className="footer-social-links">
-                <a href="https://www.linkedin.com/in/devgustavoserpa/" target="_blank">
-                    <img src={linkedin} alt="linkedin" />
-                </a>
-                 <a href="https://github.com/gvserpa" target="_blank">
-                    <img src={github} alt="github" />
-                </a>
-                <a href="https://www.instagram.com/gvserpa/" target="_blank">
-              <img src={insta} alt="insta" />
+              <a
+                href="https://www.linkedin.com/in/devgustavoserpa/"
+                target="_blank"
+              >
+                <img src={linkedin} alt="linkedin" />
+              </a>
+              <a href="https://github.com/gvserpa" target="_blank">
+                <img src={github} alt="github" />
+              </a>
+              <a href="https://www.instagram.com/gvserpa/" target="_blank">
+                <img src={insta} alt="insta" />
+              </a>
+              <a
+                href="https://wa.me/61451685180?text=Hi%20Gustavo,%20I’d%20like%20to%20get%20in%20touch%20with%20you%20about%20an%20opportunity."
+                target="_blank"
+              >
+                <img src={zap} alt="whatsapp" />
               </a>
             </div>
           </div>
@@ -66,6 +75,3 @@ const Footer = () => {
 };
 
 export default memo(Footer);
-
-
-

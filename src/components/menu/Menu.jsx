@@ -3,6 +3,7 @@ import "./index.css";
 import menuLine from "../../assets/menu-line (2).png";
 import github from "../../assets/github-fill (5).png";
 import linkedin from "../../assets/linkedin-box-fill (6).png";
+import zap from "../../assets/zap.png"
 import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
@@ -66,6 +67,9 @@ const Menu = () => {
           </a>
           <a href="https://github.com/gvserpa" target="_blank">
             <img src={github} alt="github" />
+          </a>
+                    <a href="https://wa.me/61451685180?text=Hi%20Gustavo,%20I’d%20like%20to%20get%20in%20touch%20with%20you%20about%20an%20opportunity." target="_blank">
+            <img src={zap} alt="whatsapp" />
           </a>
         </div>
       </div>

@@ -26,7 +26,7 @@ const Profile = () => {
 
       <div className="profile-card">
         <div className="card-info">
-          <h3>3+</h3>
+          <h3>2+</h3>
           <p>Years of Experience</p>
         </div>
         <div className="card-info">

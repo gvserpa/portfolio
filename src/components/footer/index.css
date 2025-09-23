@@ -16,22 +16,20 @@
 
 .Footer h2 {
   color: bisque;
-  text-align: center;
 }
 
 .footer-top {
   width: 100%;
   flex-wrap: wrap; 
   padding-top: 4vh;
+  display: flex;
 }
 
 
 .footer-left {
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: 2rem;
   flex: 1;
 }
@@ -60,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 80%;
 }
 
 .footer-center-input input {
@@ -106,7 +104,8 @@
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   flex: 1;
 }
 
@@ -156,6 +155,7 @@
   .footer-right {
     width: 100%;
     align-items: center;
+    text-align: center;
   }
 
   .footer-left-links ul,
