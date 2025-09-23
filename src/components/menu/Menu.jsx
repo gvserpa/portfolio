@@ -3,6 +3,7 @@ import "./index.css";
 import menuLine from "../../assets/menu-line (2).png";
 import github from "../../assets/github-fill (5).png";
 import linkedin from "../../assets/linkedin-box-fill (6).png";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,21 @@ const Menu = () => {
     setIsOpen(!isOpen);
   };
 
-    const scrollToSection = (id) => {
+  const closeMenu = () => setIsOpen(false)
+
+  const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const navigate = useNavigate();
+
+  const handleTitle = (e) => {
+    e.preventDefault();
+    navigate("/");
+    closeMenu();
   };
 
   return (
@@ -24,13 +35,17 @@ const Menu = () => {
         {isOpen && (
           <nav className="menu-list">
             <ul>
-              <li onClick={() => scrollToSection("projects")}>
-                Projects
-              </li>
+              <li onClick={handleTitle}>Home</li>
+                            <hr />
+              <li onClick={() => {
+                scrollToSection("projects");
+                closeMenu()
+                }}>Projects</li>
               <hr />
-              <li onClick={() => scrollToSection("about")}>
-                About Me
-              </li>
+              <li onClick={() => {
+                navigate('/about');
+                closeMenu()
+                }}>About Me</li>
             </ul>
           </nav>
         )}
@@ -39,7 +54,7 @@ const Menu = () => {
           <img src={menuLine} alt="menu-icon" />
           <h3>MENU</h3>
         </div>
-        <div className="title">
+        <div onClick={handleTitle} className="title">
           <h2>DevGustavo</h2>
         </div>
         <div className="social-media">

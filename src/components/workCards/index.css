@@ -1,0 +1,47 @@
+.work-card {
+  background: linear-gradient(135deg, #dadada, #ffffff);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 1rem;
+   margin-top: 2rem; 
+}
+
+.technology {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.tech-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-buttons a {
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: coral;
+  color: white;
+  border-radius: 20px;
+}
+
+.tech-buttons a:hover {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+}
+
+
+@media (max-width:480px) {
+    .technology {
+        flex-direction: column;
+    }
+
+    .tech-buttons {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,52 @@
+.about-content {
+  padding-right: 10vw;
+  padding-left: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: auto;
+}
+
+.about-main {
+  display: flex;
+  gap: 5vw;
+}
+
+.about-title {
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.about-title p {
+  font-size: 2rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-info p {
+  font-size: 1.2rem;
+}
+
+.about-info h3 {
+  font-size: 3rem;
+  font-family: "Michroma", sans-serif;
+}
+
+
+@media (max-width:480px) {
+  .about-title p {
+    font-size: 1rem;
+  }
+  .about-main {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .about-info h3 {
+    font-size: 2rem;
+  }
+
+}

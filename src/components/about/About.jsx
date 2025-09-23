@@ -3,8 +3,17 @@ import aboutme from "../../assets/me-mac (2).png";
 import github from "../../assets/github-fill (5).png";
 import linkedin from "../../assets/linkedin-box-fill (6).png";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+
+
+  const navigate = useNavigate()
+  const handleAbout = (e) => {
+    e.preventDefault()
+    navigate('/about')
+  }
+
   return (
     <div id="about" className="about">
       <div className="about-photo">
@@ -39,6 +48,9 @@ const About = () => {
           <a href="https://github.com/gvserpa" target="_blank">
             <img src={github} alt="github" />
           </a>
+        </div>
+        <div className="about-button">
+          <button onClick={handleAbout}>See more</button>
         </div>
       </div>
     </div>
