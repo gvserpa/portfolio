@@ -24,13 +24,13 @@ const Main = () => {
             applications.
           </span>
         </p>
-        <div className="email">
-          <img src={mail} alt="mail-icon" />
+        <address className="email">
+          <img src={mail} alt="" aria-hidden="true" />
           <h3>gvieiraserpa@gmail.com</h3>
-        </div>
+        </address>
       </div>
       <div className="main-photo">
-        <img src={mainPhoto} />
+        <img src={mainPhoto} alt="Gustavo Vieira Serpa, React Front-End Developer" />
       </div>
     </div>
   );

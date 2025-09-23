@@ -1,0 +1,57 @@
+.blog-cards {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    margin-bottom: 10vh;
+}
+
+.blog-cards h3 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.blog-header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-header-buttons span{
+    font-weight: 400;
+    color: gray;
+}
+
+.blog-header-buttons img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.blog-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-author span {
+    color: rgb(255, 145, 0);
+    font-weight: 600;
+}
+
+.card-news img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-news a {
+    color: blue;
+    display: flex;
+    gap: 0.6rem;
+}
+
+
+.card-news-link img{
+    width: 24px;
+}
